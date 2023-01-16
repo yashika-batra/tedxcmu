@@ -12,7 +12,7 @@ password = input("Type your password and press enter: ")
 context = ssl.create_default_context()
 
 with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-    sender_email = "tedxcmu@gmail.com"
+    sender_email = "emails.tedxcmu@gmail.com"
     subject = "TEDxCMU Sponsorship Request"
     server.login(sender_email, password)
 
